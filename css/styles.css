@@ -134,21 +134,35 @@ header {
   
 }
 
+
 /*main*/
+
+
+
 .dark {
-  background-color: var(--brand-color);
   display: flex;
   flex-grow: 1;
   padding: 192px 0;
+  background-color: #2e2f42;
+  background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+    ),
+  url('../images/people-office.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 
 .title {
   color: var(--brand-background-color);
-  font-weight: 600;
+  font-weight: 600px;
   font-size: 56px;
   line-height: 1.1;
-  margin: 0 auto 30px;
+  text-align: center;
   max-width: 496px;
+  margin: 0 auto 30px;
 }
 
 .button-order {
@@ -165,6 +179,7 @@ header {
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+  
 }
 
   
@@ -172,7 +187,12 @@ header {
 .button-order:focus {
   color: #ffffff;
   background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+
+/*section-one*/
+
 
 .section-one,
 .section-two {
@@ -186,10 +206,29 @@ header {
   padding-bottom: 120px;
 }
 
+.first-icon-list {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 264px;
+height: 112px;
+background: #F4F4FD;
+border-radius: 4px;
+margin-bottom: 8px;
+
+} 
+
+.first-icon {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  
+}
+
+
 .work-item {
   width: 264px;
   flex-basis:calc(( 100% - 72px ) / 4);
-
 }
 
 
@@ -210,6 +249,10 @@ header {
   
 }
 
+
+/*section-two*/
+
+
 .title-two {
   color: var(--brand-color);
   font-weight: 600;
@@ -221,8 +264,9 @@ header {
   margin-bottom: 72px;
 
 }
+
 .pct-doing {
-  flex-basis:calc((100% - 48px) /3);
+  flex-basis:calc((100% - 48px) / 3);
 
 }
 
@@ -246,6 +290,9 @@ header {
 .team-item {
   background-color: var(--brand-background-color);
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+   0px 1px 1px rgba(46, 47, 66, 0.16),
+   0px 2px 1px rgba(46, 47, 66, 0.08);
   
 }
 
@@ -272,14 +319,76 @@ header {
   text-align: center;
 }
 
-.the-end {
-  background-color: var(--brand-color);
-  flex-grow: 1;
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style-type: none;
+  margin-bottom: 32px;
+
 }
 
-/*page2-portfolio*/
+.social-list-link {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: #4D5AE5;
 
-/*Main*/
+}
+
+.social-list-link:hover {
+ background-color: #404BBF;
+
+}
+
+
+/*section-three*/
+
+
+.section-three {
+  padding-top: 130px;
+
+}
+
+.title-three {
+color: var(--brand-color);
+font-weight: 600;
+font-size: 36px;
+line-height: 1.1;
+text-align: center;
+margin-bottom: 72px;
+}
+
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 120px;
+  justify-content: center;
+  
+}
+
+.customers-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8E8F99;
+border-radius: 4px;
+width: 168px;
+height: 88px;
+
+}
+
+.customers-list-icon {
+  display: flex;
+  
+}
+
+/*Page-Portfolio*/
 
 .visually-hidden {
   position: absolute;
@@ -327,6 +436,7 @@ header {
 .button:focus {
   color: var(--brand-background-color);
   background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .cards {
@@ -335,6 +445,11 @@ header {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  
+}
+
+.card-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
  
 .card {
@@ -356,14 +471,21 @@ header {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 8px;
 }
+
+
+
+/*FOOTER*/
+
+
 
 .border-pct {
   padding: 32px 16px;
   border: 1px solid #E7E9FC;
   border-top: none;
-}
 
+}
 
 .card-title:hover,
 .card-title:focus,
@@ -378,9 +500,38 @@ header {
   line-height: 1.6;
   width: 264px;
   margin-top: 16px;
+
 }
+
+
+
+.media-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style-type: none;
+  margin-bottom: 32px;
+}
+
+.media-item:nth-child(n+2) {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: rgba(255, 255, 255, 0.1);
+}
+
+
+.media-item:hover {
+ background-color: #31D0AA;
+
+}
+
 
 .the-end {
 background-color: var(--brand-color);
-padding: 100px;
+padding: 100px; 
+flex-grow: 1;
 }
