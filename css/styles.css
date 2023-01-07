@@ -156,6 +156,7 @@ header {
 
 
 .title {
+  
   color: var(--brand-background-color);
   font-weight: 600px;
   font-size: 56px;
@@ -166,6 +167,7 @@ header {
 }
 
 .button-order {
+ 
   min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
@@ -372,6 +374,10 @@ margin-bottom: 72px;
   
 }
 
+.customers-list-item:hover {
+  border-color: #404BBF;
+}
+
 .customers-list-item {
   display: flex;
   justify-content: center;
@@ -381,11 +387,6 @@ border-radius: 4px;
 width: 168px;
 height: 88px;
 
-}
-
-.customers-list-icon {
-  display: flex;
-  
 }
 
 /*Page-Portfolio*/
