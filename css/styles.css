@@ -141,8 +141,9 @@ header {
 
 .dark {
   background-color: #2e2f42;
-    width: 1140px;
-  padding: 192px 0;
+    width: 1440px;
+    height: 600px;
+  padding: 188px 0;
     background-image: linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)
@@ -193,7 +194,9 @@ header {
 }
 
 
-/*section-one*/
+.section-one {
+  padding: 120px;
+}
 
 
 .section-one,
@@ -203,10 +206,6 @@ header {
   gap: 24px;
 }
 
-.first {
-  padding-top: 120px;
-  padding-bottom: 120px;
-} 
 
 .first-icon-list {
 display: flex;
@@ -324,10 +323,9 @@ margin-bottom: 8px;
 .social-list {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 24px;
   list-style-type: none;
-  margin-bottom: 32px;
+  padding-top: 8px;
 
 }
 
@@ -352,13 +350,13 @@ background-color: #4D5AE5;
 /*section-three*/
 
 
-.container-2 {
-  padding-top: 130px;
+.container-1 {
+  padding-top: 120px;
   padding-bottom: 120px;
 
 }
 
-.title-three {
+.container-2 {
 color: var(--brand-color);
 font-weight: 600;
 font-size: 36px;
@@ -371,16 +369,14 @@ margin-bottom: 72px;
 .customers-list {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 24px;
   list-style-type: none;
+  padding-top: 72px;
   margin-bottom: 32px;
 }
 
 .customers-list-link { 
  display: flex;
-  height: 100%;
-  width: 100%;
  justify-content: center;
  align-items: center;
  border: 1px solid #8E8F99;
@@ -461,12 +457,10 @@ fill: #8E8F99 ;
 .card-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
- 
-.card {
-  text-decoration: none;
-  width: calc((100%-72px) / 3);
-  
-}
+ .card {
+ display: block;
+ text-decoration: none;
+ }
 
 
 .card-title {
@@ -494,6 +488,7 @@ fill: #8E8F99 ;
   padding: 32px 16px;
   border: 1px solid #E7E9FC;
   border-top: none;
+  
 
 
 }
@@ -526,9 +521,7 @@ margin-bottom: 16px;
 .media-list {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 24px;
-  list-style-type: none;
   margin-bottom: 32px;
 }
 
@@ -559,6 +552,6 @@ background-color: rgba(255, 255, 255, 0.1);
 
 .the-end {
 background-color: var(--brand-color);
-padding: 100px; 
+padding: 100px 0; 
 flex-grow: 1;
 }
