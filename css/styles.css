@@ -453,14 +453,15 @@ fill: #8E8F99 ;
   row-gap: 48px;
   
 }
-
-.card-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
- .card {
+.card {
  display: block;
  text-decoration: none;
  }
+
+.card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 
 
 .card-title {
